@@ -1,0 +1,2 @@
+# flutter-abstract_communication_channel
+目标是实现一个较完全的flutter加解密通信工具。
