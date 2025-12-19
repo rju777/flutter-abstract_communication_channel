@@ -1,0 +1,34 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    plugins.withId("com.android.library") {
+        android {
+            compileSdkVersion 34
+            buildToolsVersion "34.0.0"
+            defaultConfig {
+                minSdkVersion 21
+                targetSdkVersion 34
+            }
+            java {
+                modularity.inferModulePath = false // 关键：禁用模块路径推断
+                toolchain {
+                    languageVersion = JavaLanguageVersion.of(17) // 强制JDK17
+                }
+            }
+        }
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.des_tool">
+    <application>
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+        <!-- 注册插件类 -->
+        <meta-data
+            android:name="io.flutter.plugins.desTool"
+            android:value="io.flutter.plugin.common.PluginRegistry$PluginRegistrantCallback" />
+    </application>
+</manifest>
