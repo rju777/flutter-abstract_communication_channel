@@ -14,29 +14,27 @@
 
 ### 项目yaml文件配置：
 
-yaml<br>
-dependencies:
-  flutter:
-    sdk: flutter
-  encrypt: 5.0.3
-  crypto: any
-  convert: any
-  dio: any
-
-  # 设备信息相关
-  # android_id: ^0.5.1           # Android ID获取
-  connectivity_plus: ^6.0.1      # 网络状态检测
-  device_info_plus: ^10.0.1      # 设备硬件/系统信息
-  flutter_keychain: ^2.5.0       # iOS Keychain安全存储
-  package_info_plus: ^6.0.0      # App版本信息
-
-  # 状态管理
-  flutter_bloc: ^8.1.3           # Bloc状态管理（读取语言配置）
-
-  # flutter_secure_storage: any
-  des_tool:
-    path: plugins/des_tool
-  <br>
+yaml<br>dependencies:
+<br>  flutter:
+<br>    sdk: flutter
+<br>  encrypt: 5.0.3
+<br>  crypto: any
+<br>  convert: any
+<br>  dio: any
+<br>
+<br>  # 设备信息相关
+<br>  # android_id: ^0.5.1           # Android ID获取
+<br>  connectivity_plus: ^6.0.1      # 网络状态检测
+<br>  device_info_plus: ^10.0.1      # 设备硬件/系统信息
+<br>  flutter_keychain: ^2.5.0       # iOS Keychain安全存储
+<br>  package_info_plus: ^6.0.0      # App版本信息
+<br>
+<br>  # 状态管理
+<br>  flutter_bloc: ^8.1.3           # Bloc状态管理（读取语言配置）
+<br>
+<br>  # flutter_secure_storage: any
+<br>  des_tool:
+<br>    path: plugins/des_tool<br>
 
 ### Android 配置：
 ------我先搁置一下！-------
